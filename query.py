@@ -1,4 +1,4 @@
-﻿# See Rompf T., Amin N. A SQL to C compiler in 500 lines of code. – 2019.
+﻿# See Rompf, Tiark, and Nada Amin. "A SQL to C compiler in 500 lines of code." (2019).
 
 from pathlib import Path
 from collections import namedtuple
@@ -19,7 +19,7 @@ def select_fields(row, keys):
 
 def Print(parent):
     for row in parent:
-        print(','.join(row.fields))
+        print(*row.fields)
 
 
 def Filter(pred, parent):
